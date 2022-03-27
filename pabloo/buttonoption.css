@@ -1,0 +1,34 @@
+button {
+  height: 30px;
+  width: 60px;
+  outline: 60px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
+button.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+
+html {
+  background-color: #274240;
+  border: 2px solid grey;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+a {
+  color: whitesmoke;
+}
