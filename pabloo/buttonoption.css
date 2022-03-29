@@ -1,17 +1,15 @@
 button {
   height: 30px;
   width: 60px;
-  outline: 60px;
+  outline: none;
   margin-top: 5px;
   border: none;
-  border-radius: 20px;
+  border-radius: none;
   margin-left: 25px;
+  background-color: #274240;
+  border: 2px solid grey;
 }
 
-button.current {
-  box-shadow: 0 0 0 2px white,
-              0 0 0 4px black;
-}
 
 h1 {
   margin: 0;
@@ -20,14 +18,6 @@ h1 {
   text-shadow: 3px 3px 1px black;
 }
 
-html {
-  background-color: #274240;
-  border: 2px solid grey;
-  font-family: arial;
-  font-size: 12px;
-  font-weight: bold;
-  color: black;
-}
 
 a {
   color: whitesmoke;
