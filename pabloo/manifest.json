@@ -1,7 +1,7 @@
 {
     "name": "Pabloo Extension",
     "description": "Demandez nous se que vous voudrais et on essaira pour le mettre !",
-    "version": "1.0",
+    "version": "1.4",
     "manifest_version": 3,
     "icons": {
         "16": "/images/pabloo16.png",
