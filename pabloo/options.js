@@ -1,6 +1,6 @@
 let page = document.getElementById("buttonDiv");
 let selectedClassName = "current";
-const presetButtonColors = ["#3aa757", "#e8453c", "#f9bb2d", "#4688f1", "white", "black"];
+
 
 // Reacts to a button click by marking marking the selected button and saving
 // the selection
@@ -45,3 +45,33 @@ function constructOptions(buttonColors) {
 
 // Initialize the page by constructing the color options
 constructOptions(presetButtonColors);
+
+////////////////////////////////////////////////////////////////////
+colorPicker.addEventListener("input", updateFirst, false);
+colorPicker.addEventListener("change", watchColorPicker, false);
+
+function watchColorPicker(event) {
+  document.querySelectorAll("p").forEach(function(p) {
+    p.style.color = event.target.value;
+  });
+}
+var colorWell
+var defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+function updateFirst(event) {
+  var backgroundColor = document.querySelector("backgroundColor");
+
+  if (backgroundColor) {
+    backgroundColor.style.color = event.target.value;
+  }
+}
+////////////////////////////////////////////////////////////////////

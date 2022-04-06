@@ -50,3 +50,7 @@
       a:hover {
       	color: orange;
       }
+      .col-size {
+        background-color: red;
+        width: 100%;
+      }

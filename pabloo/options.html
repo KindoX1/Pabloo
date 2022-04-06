@@ -39,7 +39,11 @@
         color: #00539F;
         text-shadow: 3px 3px 1px black;
       }
-
+      .colorWell {
+      margin: 4rem;
+      height: 10px;
+      height: 80px;
+      }
 
     </style>
 
@@ -50,13 +54,18 @@
     <h1 style="text-align:center;color:forestgreen;font-size: 35px;">
     PABLOO EXTENSION
     </h1>
-    <p style="text-align:center;font-size: 15px;"><strong>Choisie ta couleur de fond !</strong></p>
+    <p style="text-align:center;font-size: 15px;"><strong>Choisie ta couleur de fond</strong></p>
     <div id="buttonDiv">
     <a href="popup.html">
     <button id="retourColor;"style="text-align:center;"onclick="history.go(-1);">Retour</button>
     </a>
 
   </div>
+  <div>
+    <label for="colorWell"></label>
+    <input type="color" value="#ff0000" id="colorWell">
+
+</div>
 
   </body>
 
