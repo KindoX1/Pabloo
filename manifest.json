@@ -1,0 +1,35 @@
+{
+    "name": "| BETA | Pabloo Extension",
+    "description": "Demandez nous se que vous voudrais et on essaira pour le mettre !",
+    "version": "1.5",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/images/pabloo16.png",
+        "32": "/images/pabloo32.png",
+        "48": "/images/pabloo48.png",
+        "128": "/images/pabloo128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/pabloo16.png",
+            "32": "/images/pabloo32.png",
+            "48": "/images/pabloo48.png",
+            "128": "/images/pabloo128.png"
+        }
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    
+    "host_permissions": [
+        "https://www.google.com/*"
+    ]
+}
