@@ -3,69 +3,48 @@
 
   <head>
 
-    <style>
-
-      body {
-        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-        text-align: center;
-      }
-      button {
-        display: inline-block;
-        margin: 10px;
-        position: relative;
-        width: 100px;
-        height: 45px;
-        border-radius: 3px;
-        border: none;
-        font-size: 1.0em;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: 0 2px 8px 0 #999;
-        background-color: #555555;
-        color: white;
-        transition-duration: 0.4s;
-      }
-      button:hover {
-        background-color: #e7e7e7; color: black;
-        color: black;
-      }
-      button.current {
-        box-shadow: 0 0 0 2px white,
-                    0 0 0 4px black;
-      }
-      h1 {
-        margin: 0;
-        padding: 20px 0;
-        color: #00539F;
-        text-shadow: 3px 3px 1px black;
-      }
-      .colorWell {
-      margin: 4rem;
-      height: 10px;
-      height: 80px;
-      }
-
-    </style>
 
   </head>
 
+  <style>
+
+  </style>
+
+    <meta http-equiv="refresh"/>
+    <link rel="stylesheet" href="parametrecss.css">
+
   <body>
 
-    <h1 style="text-align:center;color:forestgreen;font-size: 35px;">
-    PABLOO EXTENSION
+    <button class="Bparametre" target="blank">
+    <SPAN style="position: relative; right: 6px;bottom: 1px;width: 20px; height: 20px">
+      <img src="parametres-icon.png" height="20" wight="20" alt="Essaie"></button>
+    </span>
+
+
+<div class="Btitre">
+    <h1 style="text-align:center;color:forestgreen;">
+    <hr>PABLOO EXTENSION<hr>
     </h1>
-    <p style="text-align:center;font-size: 15px;"><strong>Choisie ta couleur de fond</strong></p>
+</div>
+
+  <div>
+    <p style="text-align:center;font-size: 15px;margin-top: -30px;">
+      <strong>Choisie ta couleur <br> de fond</strong>
+    </p>
+    <div class="CBouton">
+    <label for="colorWell"></label>
+    <input type="color" value="#ff0000" id="colorWell">
+    <br>
+</div>
+</div>
+
     <div id="buttonDiv">
     <a href="popup.html">
     <button id="retourColor;"style="text-align:center;"onclick="history.go(-1);">Retour</button>
     </a>
-
+    <hr>
   </div>
-  <div>
-    <label for="colorWell"></label>
-    <input type="color" value="#ff0000" id="colorWell">
 
-</div>
 
   </body>
 
